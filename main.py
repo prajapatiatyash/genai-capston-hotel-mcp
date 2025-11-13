@@ -7,7 +7,7 @@ from hotel_booking_mcp_server import mcp
 # Create the main FastAPI application
 app = FastAPI(
     title="Airline Booking API",
-    description="A FastAPI server that hosts the Airline Booking FastMCP toolset.",
+    description="A FastAPI server that hosts the Hotel Booking FastMCP toolset.",
     version="1.0.0",
 )
 
@@ -19,7 +19,7 @@ async def read_root():
     """
     return {
         "status": "ok",
-        "message": "Welcome to the Airline Booking API.",
+        "message": "Welcome to the Hotel Booking API.",
         "mcp_tools_path": "/mcp"
     }
 
